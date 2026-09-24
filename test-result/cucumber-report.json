@@ -1,0 +1,50 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "verify-register-functionality-using-pom;register-user-with-credentials-and-take-screenshot-using-pom",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Register user with credentials and take screenshot using POM",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 416568999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I register with user credentials using POM",
+            "match": {
+              "location": "PlaywrightAutomationCode\\StepDefinition\\pomRegister.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5522271699
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registerPOM",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "verify-register-functionality-using-pom",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Verify register functionality using POM",
+    "tags": [],
+    "uri": "PlaywrightAutomationCode\\FeatureFiles\\POMRegister.feature"
+  }
+]

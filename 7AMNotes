@@ -1,0 +1,51 @@
+//Automation:
+WebPage: Contains WebElements
+WebElemnt: Each and every object in webpage called WebElement
+
+HTML:
+<html class="v2" dir="ltr" lang="en">
+<input class="form-control" id="name" maxlength="15" placeholder="Enter Name" required="" type="text">
+<label for="textbox">Name:</label>
+
+</html>
+
+tagName: input, label -> pink
+AttributeName: id, for -> red
+AttributeValue: name, textbox -> blue
+visibleText: Name:-> black
+
+Absolute Xpath: /-> root node -> not stable one -> its not suggestable for automation
+
+/html/body/div[4]/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]/div/div[4]/div[1]/div/div/div[1]/div[1]/div/div/div/div/div[2]/div[1]/input[2]
+
+
+Relative Xpath: //
+<input class="form-control" id="name" maxlength="15" placeholder="Enter Name" required="" type="text">
+
+Relative Xpath:
+===============
+syntax:1
+//tagName[@AttributeName='AttributeValue']=> //input[@id='name']
+
+syntax:2
+//tagName[text()='visibleText'] -> //label[text()='Name:']
+
+syntax:3 
+//tagName[contains(text(), 'visibleText')] -> //span[contains(text(), 'Cypress')]
+
+"test": "cucumber-js test"
+Playwright browsers are headless in default
+===========
+Cucumber Framework:
+BDD - Behavioral Data Driven
+Gherkin Language (Simple English)
+
+Given, When, Then, And, But
+
+Feature File: -> ext -> .feature
+-> Feature -> Entire file denotes the feature of the application, and related scenarios(testcase)
+-> Scenario / ScenarioOutline
+
+browser -> internetexplorer, chrome, firefox
+url paste -> navigate
+

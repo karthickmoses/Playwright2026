@@ -1,0 +1,10 @@
+{
+    "url": "https://ecommerce-playground.lambdatest.io/index.php?route=account/register",
+    "firstName":"Test Automation",
+    "lastName":"Selenium",
+    "email": "cskyspmopo1234800@gmail.com",
+    "phoneNumber":"+91 98789098768",
+    "password":"abcd1234",
+    "confirmPassword":"abcd1234"
+
+}

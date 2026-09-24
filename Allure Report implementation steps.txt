@@ -1,0 +1,32 @@
+Allure Report implementation steps in Playwright project:
+1. Terminal: 
+npm install --save-dev @cucumber/cucumber @cucumber/messages allure-cucumberjs allure-js-commons allure-commandline
+
+2. if you get warning as  "1 high severity vulnerability" use the below commandline
+
+   npm audit fix --force
+
+3. Cucumber.json file <runner file>   
+
+   3a) formatOption -> add the directory name
+	  "formatOptions": {
+      "snippetInterface": "async-await",
+      "resultDir" : "allure-results"
+    }
+   
+   3b) format -> add the report format
+	"format": [
+      "progress-bar",
+      "html:test-result/cucumber-report.html",
+      "json:test-result/cucumber-report.json",
+      "rerun:@rerun.txt",
+      "allure-cucumberjs/reporter"
+    ]
+
+4. Modify the reporter property at defineConfig() method as below in the playwright.config.ts file
+	 reporter: [['html'],['allure-playwright'],['line']]
+	 
+5. After completing the successful ru, just hit the below commandline in the terminal
+   npx allure serve <resultDir>	 
+   
+   npx allure serve allure-results

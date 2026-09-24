@@ -1,0 +1,16 @@
+URL: https://ecommerce-playground.lambdatest.io/index.php
+
+Feature: Account register for New user
+https://ecommerce-playground.lambdatest.io/index.php?route=account/register
+ 
+ -Launch the URL
+ -Take full page screenshot
+ -Register a new user and take full page sceenshot before click Continue button
+ -Take screenshot of visible page after clicking Continue Button
+
+
+Feature: Login the registered user
+https://ecommerce-playground.lambdatest.io/index.php?route=account/login
+ -Launch the URL
+ -Enter the valid credentials and take screenshot after login
+ -Enter the invalid credentials and take screenshot after login

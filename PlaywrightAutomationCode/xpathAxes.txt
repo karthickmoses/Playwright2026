@@ -1,0 +1,41 @@
+child	    		       Down			Immediate children	
+parent				Up	    		Immediate parent	
+ancestor			Up				All ancestors (parent, grandparent, root)	
+ancestor-or-self	Up + self		Current node + all ancestors	
+descendant	Down	All 			descendants (children, grandchildren)	
+descendant-or-self	Down + self		Current node + all descendants	
+following	Forward	All 			nodes after current node in document order (not descendants)	
+following-sibling	Sideways		Siblings after current node	
+preceding			Backward		All nodes before current node in document order (not ancestors)	
+preceding-sibling   Sideways		Siblings before current node
+
+syntax:
+//tagName[@attributeName='attributeValue']/xpathAxes::<axes's tagName>
+
+parent-child relation :
+//label[text()='Days:']/parent::div/child::div
+
+descendant:
+//label[text()='Days:']/parent::div/descendant::label
+
+following:
+//label[text()='Monday']/parent::div/following::div/child::label[text()='Friday']
+
+following-sibling:
+//label[text()='Monday']/parent::div/following-sibling
+//label[text()='Monday']/parent::div/following-sibling::div/child::label[text()='Tuesday']
+
+preceding: 
+//label[text()='Monday']/parent::div/preceding::div
+preceding-sibling:
+//label[text()='Monday']/parent::div/preceding-sibling::div
+//label[text()='Monday']
+//label[text()='Days:']/parent::div
+ancestor:
+//label[text()='Days:']/ancestor::div
+
+descendant:
+//label[text()='Days:']/parent::div/descendant::div
+
+
+

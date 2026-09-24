@@ -1,0 +1,29 @@
+{
+  "name": "playwightautomation",
+  "version": "1.0.0",
+  "description": "this is an automation project",
+  "main": "index.js",
+  "keywords": [
+    "pw",
+    "ts",
+    "js"
+  ],
+  "scripts": {
+    "test": "cucumber-js",
+    "day1_locators": "playwright test day1_locators --project=chromium --headed",
+    "day2_plrtLocators": "playwright test day2_plrtLocators --project=chromium",
+    "html-report": "npx playwright show-report"
+  },
+  "author": "karthick moses",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.9.0",
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^26.2.0",
+    "cucumber-html-reporter": "^5.0.2",
+    "dotenv": "^17.4.2",
+    "playwright": "^1.60.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  }
+}
